@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.RegisterActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/tb_register"
+                    style="@style/ToolBar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_title_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_title_register"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tb_register"
+                    android:layout_marginTop="20dp"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_name_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="35dp"
+                    android:textSize="14sp"
+                    android:text="@string/tv_name_register"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintStart_toStartOf="@+id/til_name_register"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_title_register" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_name_register"
+                    style="@style/TextInputLayoutTheme"
+                    app:errorEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name_register">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_name_register"
+                        style="@style/TextInputTextTheme"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:inputType="textPersonName" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_email_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="35dp"
+                    android:textSize="14sp"
+                    android:text="@string/tv_email"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintStart_toStartOf="@+id/til_email_register"
+                    app:layout_constraintTop_toBottomOf="@+id/til_name_register" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_email_register"
+                    style="@style/TextInputLayoutTheme"
+                    app:errorEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_email_register">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_email_register"
+                        style="@style/TextInputTextTheme"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:inputType="textImeMultiLine|textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_password_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="35dp"
+                    android:textSize="14sp"
+                    android:text="@string/tv_password_register"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintStart_toStartOf="@+id/til_password_register"
+                    app:layout_constraintTop_toBottomOf="@+id/til_email_register" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_password_register"
+                    style="@style/TextInputLayoutTheme"
+                    app:errorEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_password_register"
+                    app:endIconMode="password_toggle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_password_register"
+                        style="@style/TextInputTextTheme"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_confirm_password_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="35dp"
+                    android:textSize="14sp"
+                    android:text="@string/tv_confirm_password"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintStart_toStartOf="@+id/til_confirm_password_register"
+                    app:layout_constraintTop_toBottomOf="@+id/til_password_register" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_confirm_password_register"
+                    style="@style/TextInputLayoutTheme"
+                    app:errorEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_confirm_password_register"
+                    app:endIconMode="password_toggle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_confirm_password_register"
+                        style="@style/TextInputTextTheme"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_register"
+                    style="@style/buttonCustom"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/til_confirm_password_register"
+                    android:text="@string/btn_register"
+                    android:layout_marginTop="40dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

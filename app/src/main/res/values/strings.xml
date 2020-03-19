@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Scrum Control</string>
+
+    <!--Tela Login-->
+    <string name="tv_email">E-mail</string>
+    <string name="tv_password">Senha</string>
+    <string name="tv_forget_password">Esqueci minha senha</string>
+    <string name="btn_login">ENTRAR</string>
+    <string name="tv_register">Ainda não tem cadastro? Faça Agora!</string>
+    <string name="btn_register">CADASTRAR</string>
+
+    <!--Tela Esqueci Senha-->
+    <string name="tv_title_forget_password">Esqueceu sua senha?</string>
+    <string name="tv_description_forget_passoword">Enviaremos um código de recuperação para\no seu email ex***@mail.com\n\nPor favor preencha o endereço:</string>
+    <string name="btn_send_forget_password">ENVIAR</string>
+
+    <!--Tela Cadastro-->
+    <string name="tv_title_register">CADASTRE-SE</string>
+    <string name="tv_name_register">Nome</string>
+    <string name="tv_password_register">Senha</string>
+    <string name="tv_confirm_password">Confirme sua senha</string>
+
+    <!--Tela home-->
+    <string name="tv_question_home">O QUE VOCÊ PRECISA\nFAZER?</string>
+
+
+</resources>

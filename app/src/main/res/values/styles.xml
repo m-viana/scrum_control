@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <!-- Customizando layout edit text -->
+    <style name="TextInputLayoutTheme" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxCornerRadiusTopStart">25dp</item>
+        <item name="boxCornerRadiusTopEnd">25dp</item>
+        <item name="boxCornerRadiusBottomStart">25dp</item>
+        <item name="boxCornerRadiusBottomEnd">25dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="boxBackgroundColor">@color/colorWhite</item>
+        <item name="errorIconTint">@color/colorError</item>
+        <item name="errorTextColor">@color/colorError</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="hintTextColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+    </style>
+
+    <!-- Customizando edit text-->
+    <style name="TextInputTextTheme" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="hintTextColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
+    <!-- Buttons-->
+    <style name="buttonCustom" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="cornerRadius">20dp</item>
+    </style>
+
+    <!-- Toolbar-->
+    <style name="ToolBar" parent="Widget.MaterialComponents.Toolbar">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="layout_constraintStart_toStartOf">parent</item>
+    <item name="layout_constraintTop_toTopOf">parent</item>
+    <item name="navigationIcon">@drawable/ic_tb_arrow</item>
+    </style>
+
+
+</resources>
