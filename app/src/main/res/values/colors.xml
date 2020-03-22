@@ -7,4 +7,6 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorError">#F1696B</color>
     <color name="colorView">#A9ABAE</color>
+    <color name="colorUnselect">#BDB0FE</color>
+
 </resources>

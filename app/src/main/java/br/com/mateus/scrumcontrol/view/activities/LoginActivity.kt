@@ -13,7 +13,8 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         tv_forget_password.setOnClickListener { forgetPassword() }
-        btn_register.setOnClickListener { registerPassword() }
+        btn_register.setOnClickListener { register() }
+        btn_login.setOnClickListener { login() }
 
     }
 
@@ -22,8 +23,13 @@ class LoginActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun registerPassword(){
+    fun register(){
         val intent = Intent(this, RegisterActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun login(){
+        val intent = Intent(this, NavHostActivity::class.java)
         startActivity(intent)
     }
 }

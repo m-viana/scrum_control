@@ -8,26 +8,26 @@ import android.view.View
 import android.view.ViewGroup
 
 import br.com.mateus.scrumcontrol.R
-import br.com.mateus.scrumcontrol.viewmodel.HomeViewModel
+import br.com.mateus.scrumcontrol.viewmodel.InfoViewModel
 
-class HomeFragment : Fragment() {
+class InfoFragment : Fragment() {
 
     companion object {
-        fun newInstance() = HomeFragment()
+        fun newInstance() = InfoFragment()
     }
 
-    private lateinit var viewModel: HomeViewModel
+    private lateinit var viewModel: InfoViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.home_fragment, container, false)
+        return inflater.inflate(R.layout.info_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(InfoViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

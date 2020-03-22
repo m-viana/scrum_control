@@ -55,5 +55,18 @@
     <item name="navigationIcon">@drawable/ic_tb_arrow</item>
     </style>
 
+    <!-- menu do BottomNavigationView  selecionado  -->
+    <style name="BottomNavigationSelect" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <!-- menu do BottomNavigationView não selecionado   -->
+    <style name="BottomNavigationNoSelect" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorUnselect</item>
+    </style>
 
 </resources>

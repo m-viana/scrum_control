@@ -1,4 +1,4 @@
-package br.com.mateus.scrumcontrol.view.fragments
+package br.com.mateus.scrumcontrol.viewmodel
 
 import androidx.lifecycle.ViewModel
 

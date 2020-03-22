@@ -22,6 +22,15 @@
 
     <!--Tela home-->
     <string name="tv_question_home">O QUE VOCÊ PRECISA\nFAZER?</string>
+    <string name="btn_authorize">AUTORIZAR\nENTRADA E SAÍDA</string>
+    <string name="btn_recreation_area">RESERVAR\nÁREA DE LAZER</string>
+    <string name="btn_register_automobile">CADASTRAR\nAUTOMÓVEL</string>
+
+    <!--Menu-->
+    <string name="menu_info">INFO</string>
+    <string name="menu_home">HOME</string>
+    <string name="menu_profile">PERFIL</string>
+    <string name="btn_contact">SUGESTÕES E\nRECLAMAÇÕES</string>
 
 
 </resources>

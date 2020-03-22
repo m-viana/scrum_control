@@ -39,4 +39,11 @@ dependencies {
 
     /*Material Design*/
     implementation 'com.google.android.material:material:1.2.0-alpha05'
+
+    /*Navigation*/
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.0.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.0.0'
+
+    /*StatusBar*/
+    implementation 'com.jaeger.statusbarutil:library:1.5.1'
 }
