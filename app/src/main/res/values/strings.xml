@@ -25,12 +25,31 @@
     <string name="btn_authorize">AUTORIZAR\nENTRADA E SAÍDA</string>
     <string name="btn_recreation_area">RESERVAR\nÁREA DE LAZER</string>
     <string name="btn_register_automobile">CADASTRAR\nAUTOMÓVEL</string>
+    <string name="btn_contact">SUGESTÕES E\nRECLAMAÇÕES</string>
 
     <!--Menu-->
     <string name="menu_info">INFO</string>
     <string name="menu_home">HOME</string>
     <string name="menu_profile">PERFIL</string>
-    <string name="btn_contact">SUGESTÕES E\nRECLAMAÇÕES</string>
+
+    <!--Tela Controle de entrada e saida-->
+    <string name="tv_title_control">CONTROLE DE\nENTRADA E\nSAÍDA</string>
+    <string name="tv_question_control">Você precisa autorizar a entrada de quem?</string>
+    <string name="btn_temporary">VISITANTE TEMPORÁRIO/ DELIVERY</string>
+    <string name="btn_permanent">VISITANTE PERMANENTE</string>
+    <string name="btn_provider_services">PRESTADOR DE SERVIÇOS</string>
+    <string name="btn_request_send">AUTORIZAÇÕES ENVIADAS</string>
+
+    <!--Tela Visitantes-->
+    <string name="tv_title_visitors">VISITANTE TEMPORÁRIO/\nDELIVERY</string>
+    <string name="tv_description_visitors">Visitantes temporários são de acesso único, permanecem no sistema até a data informada no ato cadastro ou até o registro de entrada do mesmo. Para reentrada deverá ser realizado um novo cadastro.</string>
+    <string name="tv_description_visitors_permanent">Visitantes permanentes terão acesso livre na portaria ou até a data informada no ato do cadastro.</string>
+    <string name="tv_description_visitors_services">Prestador de serviços terão acesso livre na portaria ate a data limite informada.</string>
+    <string name="tv_alert">Obs.: Não é permitido a entrada de condutores de veículos não habilitados, se atente e evite transtornos.</string>
+    <string name="tv_et_name_visitors">Nome e sobrenome ou Entrega</string>
+    <string name="tv_date_limited_visitors">Data Limite</string>
+    <string name="tv_checkbox">Sem data de expiração</string>
+    <string name="btn_save_visitors">SALVAR</string>
 
 
 </resources>

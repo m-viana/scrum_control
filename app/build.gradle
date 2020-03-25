@@ -46,4 +46,6 @@ dependencies {
 
     /*StatusBar*/
     implementation 'com.jaeger.statusbarutil:library:1.5.1'
+
+
 }

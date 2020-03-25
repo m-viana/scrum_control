@@ -14,7 +14,10 @@ class LoginActivity : AppCompatActivity() {
 
         tv_forget_password.setOnClickListener { forgetPassword() }
         btn_register.setOnClickListener { register() }
-        btn_login.setOnClickListener { login() }
+        btn_login.setOnClickListener {
+            login()
+            finish()
+        }
 
     }
 

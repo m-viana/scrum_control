@@ -47,13 +47,10 @@
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tv_name_register"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/TextViewEditText"
                     android:layout_marginTop="30dp"
                     android:layout_marginStart="35dp"
-                    android:textSize="14sp"
                     android:text="@string/tv_name_register"
-                    android:textColor="@color/colorWhite"
                     app:layout_constraintStart_toStartOf="@+id/til_name_register"
                     app:layout_constraintTop_toBottomOf="@+id/tv_title_register" />
 
@@ -76,13 +73,10 @@
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tv_email_register"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/TextViewEditText"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="35dp"
-                    android:textSize="14sp"
                     android:text="@string/tv_email"
-                    android:textColor="@color/colorWhite"
                     app:layout_constraintStart_toStartOf="@+id/til_email_register"
                     app:layout_constraintTop_toBottomOf="@+id/til_name_register" />
 
@@ -105,13 +99,10 @@
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tv_password_register"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/TextViewEditText"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="35dp"
-                    android:textSize="14sp"
                     android:text="@string/tv_password_register"
-                    android:textColor="@color/colorWhite"
                     app:layout_constraintStart_toStartOf="@+id/til_password_register"
                     app:layout_constraintTop_toBottomOf="@+id/til_email_register" />
 
@@ -135,13 +126,10 @@
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tv_confirm_password_register"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/TextViewEditText"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="35dp"
-                    android:textSize="14sp"
                     android:text="@string/tv_confirm_password"
-                    android:textColor="@color/colorWhite"
                     app:layout_constraintStart_toStartOf="@+id/til_confirm_password_register"
                     app:layout_constraintTop_toBottomOf="@+id/til_password_register" />
 

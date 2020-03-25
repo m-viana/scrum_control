@@ -6,9 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 
 import br.com.mateus.scrumcontrol.R
 import br.com.mateus.scrumcontrol.viewmodel.HomeViewModel
+import kotlinx.android.synthetic.main.home_fragment.*
 
 class HomeFragment : Fragment() {
 
@@ -28,7 +30,18 @@ class HomeFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
-        // TODO: Use the ViewModel
+
+        btn_authorize.setOnClickListener { findNavController().navigate(R.id.controlFragment)}
     }
 
 }
+
+/* 1 forma
+* btn_authorize.setOnClickListener { findNavController().navigate(R.id.controlFragment) }*/
+
+/* 2 forma - para passar valor
+* btn_authorize.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("CHAVE", "TESTE")
+            findNavController().navigate(R.id.controlFragment, bundle)
+        }*/

@@ -9,7 +9,8 @@
         android:id="@+id/nav_home"
         android:name="br.com.mateus.scrumcontrol.view.fragments.HomeFragment"
         android:label="home_fragment"
-        tools:layout="@layout/home_fragment" />
+        tools:layout="@layout/home_fragment" >
+    </fragment>
     <fragment
         android:id="@+id/nav_info"
         android:name="br.com.mateus.scrumcontrol.view.fragments.InfoFragment"
@@ -20,4 +21,14 @@
         android:name="br.com.mateus.scrumcontrol.view.fragments.ProfileFragment"
         android:label="profile_fragment"
         tools:layout="@layout/profile_fragment" />
+    <fragment
+        android:id="@+id/controlFragment"
+        android:name="br.com.mateus.scrumcontrol.view.fragments.ControlFragment"
+        android:label="control_fragment"
+        tools:layout="@layout/control_fragment" />
+    <fragment
+        android:id="@+id/visitorsFragment"
+        android:name="br.com.mateus.scrumcontrol.view.fragments.VisitorsFragment"
+        android:label="visitors_fragment"
+        tools:layout="@layout/visitors_fragment" />
 </navigation>
