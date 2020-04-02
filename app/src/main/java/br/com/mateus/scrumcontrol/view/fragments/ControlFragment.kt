@@ -54,6 +54,8 @@ class ControlFragment : Fragment() {
             findNavController().navigate(R.id.visitorsFragment, bundle) }
 
         tb_control.setNavigationOnClickListener { activity?.onBackPressed() }
+
+        mcv_btn_authorizations.setOnClickListener { findNavController().navigate(R.id.authorizationsFragment) }
     }
 
 }

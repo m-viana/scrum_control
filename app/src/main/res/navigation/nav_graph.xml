@@ -31,4 +31,14 @@
         android:name="br.com.mateus.scrumcontrol.view.fragments.VisitorsFragment"
         android:label="visitors_fragment"
         tools:layout="@layout/visitors_fragment" />
+    <fragment
+        android:id="@+id/authorizationsFragment"
+        android:name="br.com.mateus.scrumcontrol.view.fragments.AuthorizationsFragment"
+        android:label="authorizations_fragment"
+        tools:layout="@layout/authorizations_fragment" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="br.com.mateus.scrumcontrol.view.fragments.ContactFragment"
+        android:label="contact_fragment"
+        tools:layout="@layout/contact_fragment" />
 </navigation>

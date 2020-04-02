@@ -120,7 +120,7 @@
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
                         android:background="@drawable/gradient_background"
-                        android:inputType="textImeMultiLine|textEmailAddress" />
+                        android:inputType="textPersonName|textCapSentences" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -167,7 +167,7 @@
                             android:layout_marginStart="10dp"
                             android:layout_marginEnd="10dp"
                             android:background="@drawable/gradient_background"
-                            android:inputType="textImeMultiLine|textEmailAddress" />
+                            android:inputType="date" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -202,6 +202,5 @@
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

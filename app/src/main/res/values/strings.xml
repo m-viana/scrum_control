@@ -51,5 +51,13 @@
     <string name="tv_checkbox">Sem data de expiração</string>
     <string name="btn_save_visitors">SALVAR</string>
 
+    <!--Tela de Autorizações-->
+    <string name="tv_title_autorizathions">AUTORIZAÇÕES ENVIADAS</string>
+
+    <!--Tela Contato-->
+    <string name="tv_title_contact">DÚVIDAS, SUGESTÕES E\nRECLAMAÇÕES</string>
+    <string name="tv_description_contact">FALE COM A GENTE!\n\nDúvidas, sugestões ou reclamações?\nEntre em contato e retornaremos\npelo e-mail informado!</string>
+    <string name="tv_et_message">Mensagem</string>
+
 
 </resources>

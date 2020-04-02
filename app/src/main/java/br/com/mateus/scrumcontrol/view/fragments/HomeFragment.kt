@@ -32,6 +32,7 @@ class HomeFragment : Fragment() {
         viewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
 
         btn_authorize.setOnClickListener { findNavController().navigate(R.id.controlFragment)}
+        btn_contact.setOnClickListener { findNavController().navigate(R.id.contactFragment)}
     }
 
 }
