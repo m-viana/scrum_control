@@ -11,7 +11,8 @@
 
     <!--Tela Esqueci Senha-->
     <string name="tv_title_forget_password">Esqueceu sua senha?</string>
-    <string name="tv_description_forget_passoword">Enviaremos um código de recuperação para\no seu email ex***@mail.com\n\nPor favor preencha o endereço:</string>
+    <string name="tv_description_forget_passoword">Enviaremos um código de recuperação para\no seu
+        email ex***@mail.com\n\nPor favor preencha o endereço:</string>
     <string name="btn_send_forget_password">ENVIAR</string>
 
     <!--Tela Cadastro-->
@@ -42,10 +43,15 @@
 
     <!--Tela Visitantes-->
     <string name="tv_title_visitors">VISITANTE TEMPORÁRIO/\nDELIVERY</string>
-    <string name="tv_description_visitors">Visitantes temporários são de acesso único, permanecem no sistema até a data informada no ato cadastro ou até o registro de entrada do mesmo. Para reentrada deverá ser realizado um novo cadastro.</string>
-    <string name="tv_description_visitors_permanent">Visitantes permanentes terão acesso livre na portaria ou até a data informada no ato do cadastro.</string>
-    <string name="tv_description_visitors_services">Prestador de serviços terão acesso livre na portaria ate a data limite informada.</string>
-    <string name="tv_alert">Obs.: Não é permitido a entrada de condutores de veículos não habilitados, se atente e evite transtornos.</string>
+    <string name="tv_description_visitors">Visitantes temporários são de acesso único, permanecem no
+        sistema até a data informada no ato cadastro ou até o registro de entrada do mesmo. Para
+        reentrada deverá ser realizado um novo cadastro.</string>
+    <string name="tv_description_visitors_permanent">Visitantes permanentes terão acesso livre na
+        portaria ou até a data informada no ato do cadastro.</string>
+    <string name="tv_description_visitors_services">Prestador de serviços terão acesso livre na
+        portaria ate a data limite informada.</string>
+    <string name="tv_alert">Obs.: Não é permitido a entrada de condutores de veículos não
+        habilitados, se atente e evite transtornos.</string>
     <string name="tv_et_name_visitors">Nome e sobrenome ou Entrega</string>
     <string name="tv_date_limited_visitors">Data Limite</string>
     <string name="tv_checkbox">Sem data de expiração</string>
@@ -56,8 +62,61 @@
 
     <!--Tela Contato-->
     <string name="tv_title_contact">DÚVIDAS, SUGESTÕES E\nRECLAMAÇÕES</string>
-    <string name="tv_description_contact">FALE COM A GENTE!\n\nDúvidas, sugestões ou reclamações?\nEntre em contato e retornaremos\npelo e-mail informado!</string>
+    <string name="tv_description_contact">FALE COM A GENTE!\n\nDúvidas, sugestões ou
+        reclamações?\nEntre em contato e retornaremos\npelo e-mail informado!</string>
     <string name="tv_et_message">Mensagem</string>
+
+    <!--Tela Perfil-->
+    <string name="tv_name_profile">Lucas Andrade Silva</string>
+    <string name="tv_address_profile">Bloco B - Ap. 202</string>
+    <string name="tv_email_profile">email@email.com.br</string>
+    <string name="tv_change_password">Alterar Senha</string>
+    <string name="tv_about">Sobre</string>
+    <string name="tv_privacy_policy">Política de Privacidade</string>
+    <string name="tv_terms_of_use">Termos de Uso</string>
+    <string name="tv_contact_profile">Contato</string>
+    <string name="tv_exit">Sair</string>
+
+    <!--Tela Alterar Senha-->
+    <string name="tv_title_change_password">ALTERAR SENHA</string>
+    <string name="tv_current_password">Senha atual</string>
+    <string name="tv_new_password">Senha nova</string>
+    <string name="tv_confirm_new_password">Confirme a nova senha</string>
+    <string name="btn_confirm">CONFIRMAR</string>
+
+    <!--Tela Sobre, Termos de uso e Politica de Privacidade-->
+    <string name="tv_title_about">SOBRE</string>
+    <string name="tv_lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</string>
 
 
 </resources>

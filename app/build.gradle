@@ -47,5 +47,8 @@ dependencies {
     /*StatusBar*/
     implementation 'com.jaeger.statusbarutil:library:1.5.1'
 
+    /*Circle ImageView*/
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
 
 }

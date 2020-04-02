@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragments.AboutFragment"
+    android:background="@color/colorPrimary">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/tb_about"
+        style="@style/ToolBar"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title_about"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/roboto_th"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorWhite"
+        android:textSize="22sp"
+        android:text="@string/tv_title_about"
+        app:layout_constraintBottom_toBottomOf="@+id/tb_about"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tb_about"
+        app:layout_constraintTop_toTopOf="@+id/tb_about" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv_control"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/iv_about"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_about">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_description_about"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_lorem_ipsum"
+                    style="@style/TextViewEditText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginHorizontal="10dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_about"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/iv_profile_logo"
+        android:layout_marginBottom="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

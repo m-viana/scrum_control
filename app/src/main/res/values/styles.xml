@@ -70,7 +70,7 @@
         <item name="android:textColor">@color/colorUnselect</item>
     </style>
 
-    <!-- menu do BottomNavigationView não selecionado   -->
+    <!-- Texto branco app   -->
     <style name="TextViewEditText" parent="Widget.MaterialComponents.TextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -78,6 +78,19 @@
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">@color/colorWhite</item>
         <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Texto das opções do Perfil  -->
+    <style name="TextProfile" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:gravity">center|start</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:drawablePadding">20dp</item>
     </style>
 
 </resources>

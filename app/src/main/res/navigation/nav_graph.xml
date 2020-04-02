@@ -41,4 +41,14 @@
         android:name="br.com.mateus.scrumcontrol.view.fragments.ContactFragment"
         android:label="contact_fragment"
         tools:layout="@layout/contact_fragment" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="br.com.mateus.scrumcontrol.view.fragments.ChangePasswordFragment"
+        android:label="change_password_fragment"
+        tools:layout="@layout/change_password_fragment" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="br.com.mateus.scrumcontrol.view.fragments.AboutFragment"
+        android:label="about_fragment"
+        tools:layout="@layout/about_fragment" />
 </navigation>
