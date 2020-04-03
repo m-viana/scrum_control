@@ -118,5 +118,10 @@
         sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
         laborum.</string>
 
+    <!--Bototm Sheet-->
+    <string name="tv_title_bottom_sheet">DESEJA REALMENTE SAIR?</string>
+    <string name="btn_no">NÃO</string>
+    <string name="btn_yes">SIM</string>
+
 
 </resources>
