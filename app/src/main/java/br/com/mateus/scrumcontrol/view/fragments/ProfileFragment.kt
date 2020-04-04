@@ -1,7 +1,11 @@
 package br.com.mateus.scrumcontrol.view.fragments
 
+import android.Manifest
+import android.app.Activity
+import android.content.Intent
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -10,9 +14,13 @@ import android.widget.Button
 import androidx.navigation.fragment.findNavController
 
 import br.com.mateus.scrumcontrol.R
+import br.com.mateus.scrumcontrol.utils.ImageUtil
 import br.com.mateus.scrumcontrol.viewmodel.ProfileViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.livinglifetechway.quickpermissions_kotlin.runWithPermissions
+import com.theartofdev.edmodo.cropper.CropImage
+import com.theartofdev.edmodo.cropper.CropImageView
 import kotlinx.android.synthetic.main.profile_fragment.*
 
 class ProfileFragment : Fragment() {
@@ -22,6 +30,7 @@ class ProfileFragment : Fragment() {
     }
 
     private lateinit var viewModel: ProfileViewModel
+    internal lateinit var imageUtil: ImageUtil
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,6 +42,7 @@ class ProfileFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(ProfileViewModel::class.java)
+        imageUtil = ImageUtil(activity)
 
     }
 
@@ -72,6 +82,50 @@ class ProfileFragment : Fragment() {
 
             dialog.setContentView(view)
             dialog.show()
+        }
+
+        civ_profile.setOnClickListener { getImageFromDevice() }
+    }
+
+    /*Camera*/
+    private fun getImageFromDevice() {
+        fun methodWithPermissions() = runWithPermissions(
+            Manifest.permission.CAMERA,
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE
+        ) {
+            CropImage
+                .activity()
+                .setGuidelines(CropImageView.Guidelines.ON)
+                .setCropShape(CropImageView.CropShape.OVAL)
+                .setAspectRatio(1, 1)
+                .start(context!!, this)
+        }
+
+        methodWithPermissions()
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
+
+            val result = CropImage.getActivityResult(data)
+            if (resultCode == Activity.RESULT_OK) {
+                val uri = result.uri
+                if (uri == null) {
+                    Log.i("_res", "Ta nulo")
+                } else {
+                    try {
+                        val bitmap = imageUtil.getBitmapFromUri(uri)
+                        civ_profile.setImageBitmap(bitmap)
+                      //  sendFile(uri)
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+                    }
+                }
+
+            } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
+                val error = result.error
+            }
         }
     }
 
