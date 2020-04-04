@@ -123,5 +123,15 @@
     <string name="btn_no">NÃO</string>
     <string name="btn_yes">SIM</string>
 
+    <!--Tela informações-->
+    <string name="tv_title_info">Aqui você poderá ver as regras, informações e notificações do
+        condomínio. Fique por dentro\ndas notícias e novidades da nossa comunidade.</string>
+
+    <!--Item Info-->
+    <string name="title_item_info">Regras do Condomínio</string>
+    <string name="description_item_info">Aqui você encontra tudo que pode ou não fazer dentro do
+        condomínio.</string>
+    <string name="read_more">Ler mais</string>
+
 
 </resources>
